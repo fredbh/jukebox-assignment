@@ -12,14 +12,14 @@ Alternatively, if you have Maven installed, you can run the app by calling 'mvnw
 
 ## Endpoints
 
-**GET** '/jukeboxes'
+**GET** `/jukeboxes`
 
 With parameters:
 
-'settingId' - The ID of the setting for which you want to find compatible jukeboxes (required)
-'model' - Filter by model name (optional)
-'offset' - Specifies at what index to start the page (optional)
-'limit' - Specifies page size (optional)
+`settingId` - The ID of the setting for which you want to find compatible jukeboxes (required)
+`model` - Filter by model name (optional)
+`offset` - Specifies at what index to start the page (optional)
+`limit` - Specifies page size (optional)
 
 Sample return:
 
@@ -30,7 +30,7 @@ Sample return:
 ```
 
 
-**GET** '/clearCache'
+**GET** `/clearCache`
 
 The API uses other calls to populate the list of all jukeboxes ('http://my-json-server.typicode.com/touchtunes/tech-assignment/jukes') and settings ('http://my-json-server.typicode.com/touchtunes/tech-assignment/settings').
 These lists are cached once called. If the need to reset the cache, this call will do that.
